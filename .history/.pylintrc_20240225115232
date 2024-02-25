@@ -1,0 +1,12 @@
+[MASTER]
+disable = missing-module-docstring,import-error,unused-import
+
+[MESSAGES CONTROL]
+disable = missing-module-docstring,import-error,unused-import
+
+
+[MESSAGES CONTROL]
+disable = missing-class-docstring,too-few-public-methods
+
+[DESIGN]
+min-public-methods = 2

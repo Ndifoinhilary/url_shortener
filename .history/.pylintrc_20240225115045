@@ -1,0 +1,5 @@
+[MASTER]
+disable = missing-module-docstring,import-error,unused-import
+
+[MESSAGES CONTROL]
+disable = missing-module-docstring,import-error,unused-import
