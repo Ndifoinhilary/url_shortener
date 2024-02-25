@@ -20,9 +20,10 @@ class Link(models.Model):
     def __str__(self):
         return self.name
 
-    def click(self):
-        self.clicks += 1
+    def clicks(self):
+        self.clicks = self.clicks + 1
         self.save()
+        return self.clicks
 
     def save(self, *args, **kwargs):
         if not self.slug:

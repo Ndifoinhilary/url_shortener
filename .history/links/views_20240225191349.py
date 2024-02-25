@@ -14,7 +14,6 @@ def index(request):
 def root_link(request, link_slug):
 
     link = get_object_or_404(Link, slug=link_slug)
-
-    link.click()
-
+    # add the number of times the link  is being clicked
+    link.click(request)
     return redirect(link.url)
