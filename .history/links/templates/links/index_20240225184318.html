@@ -1,0 +1,15 @@
+<h1>Welcome</h1>
+
+
+<ul>
+    
+    {% for link  in  links %}
+        <li>{{ link.name}} | {{link.url}} <p>number of clicks : {{link.click}}</p></li>
+        <p>click me <a  target="_blank" href="{% url 'link' link.slug %}">{{link.name}}</a></p>
+    {% endfor %}
+        
+   
+</ul>
+
+<hr>
+<hr>

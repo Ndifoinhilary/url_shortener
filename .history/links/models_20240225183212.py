@@ -21,8 +21,9 @@ class Link(models.Model):
         return self.name
 
     def click(self):
-        self.clicks += 1
+        self.clicks = self.clicks + 1
         self.save()
+        return self.clicks
 
     def save(self, *args, **kwargs):
         if not self.slug:
